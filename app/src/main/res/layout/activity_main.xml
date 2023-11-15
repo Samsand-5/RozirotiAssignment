@@ -195,6 +195,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="18sp"
+            android:layout_marginLeft="11dp"
             android:text="Already have an account?"
             android:textStyle="normal"/>
 
@@ -203,6 +204,7 @@
             android:layout_height="wrap_content"
             android:text="Sign In"
             android:textSize="18sp"
+            android:layout_marginLeft="0.5dp"
             android:textStyle="bold"
             android:textColor="@color/black"/>
 
