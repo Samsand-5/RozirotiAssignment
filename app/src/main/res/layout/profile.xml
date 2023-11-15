@@ -6,6 +6,7 @@
 
 
     <LinearLayout
+        android:id="@+id/Linear"
         android:layout_width="match_parent"
         android:layout_height="280dp"
         android:orientation="vertical"
@@ -81,19 +82,38 @@
             android:gravity="center"
             android:layout_marginTop="10dp"/>
 
-
     </LinearLayout>
 
-    <ScrollView
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/Linear">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Your Text Here" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Your Button" />
 
 
-
-    </ScrollView>
-
-
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
